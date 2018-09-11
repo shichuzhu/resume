@@ -1,0 +1,147 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+\usepackage{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{tabularx,calc,scrextend,bibentry}
+
+\pagestyle{plain}   % create page numbers
+
+\name{\huge Shichu Zhu\\[12pt]}     % the \\[12pt] adds a blank
+
+\address{\bf  PRESENT ADDRESS\\1102 W Stoughton, Apt.13\\Urbana, IL 61801\\ (217) 607-6968}
+\address{\bf PERMANENT ADDRESS \\221 Qingshannanlu Road \\  Qingyunpu District, Nanchang\\ Jiangxi, China 330006\\  (+86) 0791 8863-3856}
+
+\newcommand{\righttime}[1]{\hfill \makebox[1.25in][l]{{#1}}}
+\let\oldsection\section
+\let\oldsubsection\subsection
+\renewcommand{\section}[1]{\vspace{-0.1in}\oldsection{#1}}
+\renewcommand{\subsection}[1]{\vspace{-0.2in}\oldsubsection{#1}\vspace{-0.25in}}
+
+%\newlength{\mtwocol}
+%\setlength{\mtwocol}{\dimexpr(\textwidth-1.25in)/2\relax}
+
+\begin{document}
+\begin{resume}
+
+\section{Personal Info}
+\vspace{2pt}
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Nanchang, Jiangxi, China  | December 5, 1992 \\
+\textsc{email:} & \href{mailto:szhu28@illinois.edu}{szhu28@illinois.edu}\\
+%\textsc{Hobbies \& Skills:} & Swimming, Tennis, Go Game, Dancing (Waltz), Hiking.
+\end{tabular}
+
+\section{EDUCATION}
+\subsection{M.S. Atmospheric Sciences}
+University of Illinois, Urbana, IL, USA  \righttime{Aug. 2014 -- Present}\\
+G.P.A. Overall 3.66/4.0
+
+\subsection{Bachelor of Science}
+Peking University, Beijing, China \righttime{Sept. 2010 -- Jul. 2014}\\
+Department of Atmospheric and Oceanic Sciences, School of Physics\\
+G.P.A. Major 3.70/4.0, Overall 3.52/4.0
+    
+    
+\section{CS-RELATED COURSES}
+
+\subsection{Undergraduate Courses}
+\begin{tabularx}{\textwidth}{X|X}
+	\begin{tabular}{ll}
+		CS subject & Grades\\
+		Introduction to Computation & 97\\
+		Algorithms and Data Structures & 86\\
+		Applied Numerical Methods & 97\\
+		Climate Modeling & 89\\	
+	\end{tabular}
+	&
+	\begin{tabular}{ll}
+		Maths subject & Grades\\
+		Linear Algebra & 92\\
+		Probability and Statistics & 83\\
+		Advanced Mathematics (Calculus) & 93\\
+		Methods of Mathematical Physics & 100\\
+		%Logic and Critical Thinking & 89\\	
+	\end{tabular}
+\end{tabularx}%
+\vspace{-0.2in}
+\subsection{Auditing CS courses at UIUC}
+\begin{tabularx}{\textwidth}{X|X}
+	\begin{tabular}{rl}
+		CS 225 & Data Structures\\
+		CS 233 & Computer Architecture\\
+		CS 241 & System Programming\\
+		CS 425 & Distributed Systems\\
+		CS 484 & Parallel Programming\\
+		CS 438 & Communication Networks\\
+	\end{tabular}
+	&
+	\begin{tabular}{rl}
+		CS 421 & Progrmg Lang \& Compilers\\
+		CS 411 & Database Systems\\
+		ECE 418 & Image \& Video Processing\\
+		CS 374 & Algo \& Models of Computation\\
+		CS 473 & Algorithms\\
+		CS 398 & Applied Cloud Computing\\
+	\end{tabular}
+\end{tabularx}\\
+\vspace{-0.1in}
+
+\section{COMPUTER SKILLS}
+\vspace{2pt}
+\begin{tabular}{p{4cm}l}
+	Programming skills & C/C++, Python, FORTRAN, Clojure, Haskell, \LaTeX.\\
+	Knowledge of software & Microsoft Office, Matlab
+\end{tabular}
+
+\section{TEACHING EXPERIENCE}
+{\bf Teaching Assistant}, University of Illinois \righttime{Fall 2016 -- Spring 2017}\\
+Fall 2016 ATMS 301 TA with Prof. \!Sonia Lasher-Trapp and Spring 2017 ATMS 201 with Prof. Eric Snodgrass. Activities included grading, writing quiz questions and giving mini lectures explaining homework problems.
+
+\section{RESEARCH EXPERIENCE}
+{\bf Research Assistant}, University of Illinois \righttime{Aug. 2014 -- May. 2016}\\
+Statistically analyzed the vast radar data and images of ice particles collected during the High Altitude Ice Crystals -- High Ice Water Content (HAIC -- HIWC) field campaign. The results were used to improve the accuracy of cloud formation in the weather research and forecasting (WRF) model. The project was advised by Prof. \!Greg McFarquhar and funded by the National Science Foundation (NSF). The results were presented in multiple conferences.
+
+{\bf Visiting Student}, National Center for Atmospheric Research (NCAR) \righttime{Aug. 2015 -- Aug. 2016}\\
+Compared performance and results of the softwares from NCAR and Univ. of Illinois, which were used to process the raw pixel image of ice particles and produce the size distribution. Improved the performance of Illinois' version and corrected a few bugs, in addition to comparing the results due to different image processing algorithms.
+
+{\bf Undergraduate Thesis}, Peking University \righttime{Sept. 2013 -- Jun. 2014}\\
+Tested multiple numerical schemes to solve the advection equation, among which the Flux-corrected Transport method (FCT) serves as a candidate to model the water vapor transportation to be implemented in the General Circulation Model (GCM) developed by the research group of Prof. Xinyu Wen.
+
+{\bf Visiting Student}, California Institute of Technology \righttime{Jul. 2013 -- Sept. 2013}\\
+Performed numerical simulation of equatorial super-rotation and high latitude jet structure of Jupiter's weather layer using a shallow-water model with varying parameterized convection. The research was directed by Prof.\! Andrew P. Ingersoll from the Division of Geological and Planetary Science.
+
+{\bf Undergraduate Research}, Peking University \righttime{Fall 2011 -- Fall 2013}\\
+Integrated simulation and observational data to study the seasonal change of the Hadley Circulation under El Ni\~no and La Ni\~na scenarios. The research was funded by the \emph{The Chun-Tsung Scholar Fund for Undergraduate Research of Peking University} and supervised by Prof.\! Yongyun Hu.
+
+\section{CONFERENCES}
+\bibliographystyle{plain}
+\nobibliography{ref}
+\begin{enumerate}
+	\item \bibentry{Zhu2016}
+	\item \bibentry{Zhu2016a}
+\end{enumerate}
+
+\section{UNDERGRAD HONORS AND AWARDS}
+    \vspace{2pt}
+    \begin{tabular}{rl}
+    Dec. 2013 & \emph{Weiming} Scholarship of School of Physics\\
+    Oct. 2012 & 2nd Prize of \emph{Jiangzehan} Contest of mathematical modeling, Peking Univ.\\
+    Nov. 2011 & \emph{Weiming} Outstanding Student \\
+    Sept. 2011 & \emph{Haiou} Scholarship of School of Physics\\
+    May. 2011 & 2nd Prize of Contest of Applied Physics held by School of Physics, Peking Univ.\\
+    Nov. 2009 & 2nd Prize of Chinese National Physics Olympiads (CPhO)
+    %\multicolumn{2}{c}{}\\
+    \end{tabular}
+
+\section{LANGUAGE TESTS}
+\vspace{2pt}
+\begin{tabular}{rll}
+    Oct. 20, 2012 & GRE General Test & 153(Verbal) + 169(Quantitative) + 3.5(AW)\\
+    Oct. 12, 2013 & TOEFL iBT & Total 106 (Reading 29, Listening 28, Speaking 20, Writing 29)
+\end{tabular}
+
+\end{resume}
+\end{document}
