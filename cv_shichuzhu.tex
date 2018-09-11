@@ -2,7 +2,7 @@
 % This file uses the resume document class (res.cls)
 
 \documentclass{res}
-\usepackage{natbib}
+\usepackage{natbib,fontawesome}
 \usepackage[hidelinks]{hyperref}
 \usepackage{amsmath,amssymb}
 \usepackage{tabularx,calc,scrextend,bibentry}
@@ -29,7 +29,7 @@
 \begin{resume}
 	\section{EDUCATION}
 	\subsection{Professional Master of Computer Science}
-	University of Illinois, Urbana, IL, USA  \righttime{Aug. 2018 -- Present} \\
+	University of Illinois at Urbana-Champaign (UIUC), Urbana, IL, USA  \righttime{Aug. 2018 -- Present} \\
 	\vspace{-0.15in}
 	\vspace{-0.15in}
 	
@@ -49,71 +49,85 @@
 	\subsection{Undergraduate Courses}
 	\begin{tabularx}{\textwidth}{X|X}
 		\begin{tabular}{ll}
-			CS subject                     & Grades \\
-			Introduction to Computation    & 97     \\
-			Algorithms and Data Structures & 86     \\
-			Applied Numerical Methods      & 97     \\
-			Climate Modeling               & 89     \\	
+			CS subject                & Grades  \\
+			% Introduction to Computation    & 97      \\
+			% Algorithms and Data Structures & 86      \\
+			Applied Numerical Methods & 97      \\
+			Climate Modeling          & 89     
 		\end{tabular}
 		 & 
 		\begin{tabular}{ll}
-			Maths subject                   & Grades \\
-			Linear Algebra                  & 92     \\
-			Probability and Statistics      & 83     \\
-			Advanced Mathematics (Calculus) & 93     \\
-			Methods of Mathematical Physics & 100    \\
+			Maths subject              & Grades \\
+			Linear Algebra             & 92     \\
+			Probability and Statistics & 83     \\
+			% Advanced Mathematics (Calculus) & 93      \\
+			% Methods of Mathematical Physics & 100    
 			%Logic and Critical Thinking & 89\\	
 		\end{tabular}
 	\end{tabularx}%
-	\vspace{-0.2in}
-	\subsection{Audited CS courses at UIUC}
-	\vspace{0.03in}
+	\vspace{-0.15in}
+	
+	\subsection{Audited Courses at UIUC}
 	\begin{tabularx}{\textwidth}{X|X}
 		\begin{tabular}{rl}
-			CS 225 & Data Structures        \\
-			CS 233 & Computer Architecture  \\
-			CS 241 & System Programming     \\
-			CS 425 & Distributed Systems    \\
-			CS 484 & Parallel Programming   \\
-			CS 438 & Communication Networks \\
+			CS 225 & Data Structures               \\
+			CS 233 & Computer Architecture         \\
+			CS 241 & System Programming            \\
+			CS 374 & Algo \& Models of Computation \\
+			CS 398 & Applied Cloud Computing       \\
 		\end{tabular}
 		 & 
 		\begin{tabular}{rl}
-			CS 421  & Progrmg Lang \& Compilers     \\
-			CS 411  & Database Systems              \\
-			ECE 418 & Image \& Video Processing     \\
-			CS 374  & Algo \& Models of Computation \\
-			CS 473  & Algorithms                    \\
-			CS 398  & Applied Cloud Computing       \\
+			CS 411 & Database Systems          \\
+			CS 421 & Progrmg Lang \& Compilers \\
+			CS 438 & Communication Networks    \\
+			CS 473 & Algorithms                \\
+			CS 484 & Parallel Programming      \\
+			% ECE 418 & Image \& Video Processing \\
 		\end{tabular}
-	\end{tabularx}\\
-	\vspace{-0.1in}
+	\end{tabularx}%
+	\vspace{-0.15in}
 	
-	\section{COMPUTER SKILLS}
+	\subsection{Ongoing Courses at UIUC}
+	\begin{tabularx}{\textwidth}{X|X}
+		\begin{tabular}{rl}
+			CS 425 & Distributed Systems   \\
+			CS 426 & Compiler Construction \\
+		\end{tabular}
+		 & 
+		\begin{tabular}{rl}
+			CS 440 & Artificial Intelligence     \\
+			CS 447 & Natural Language Processing \\
+		\end{tabular}
+	\end{tabularx}%
+	
+	\section{PROGRAMMING EXPERIENCE}
 	\vspace{2pt}
 	\begin{tabular}{p{4cm}l}
-		C/C++   & CS 225 MP/lab, CS 438 system programming          \\
-		Python  & Data analysis research, CS 425 socket programming \\
-		FORTRAN & Scientific computing, climate modeling            \\
-		MATLAB  & Data analysis research, numeric software develop  \\
-		Clojure & CS 296-25 text adventure game                     \\
-		Haskell & CS 421 MP/activities                              \\
-		\LaTeX  & Thesis, homework, reports, \emph{this CV}         \\
-		Java    & Software dev -- DataSpread
+		C/C++   & CS 225 Machine problems (MP), CS 438                  \\
+		Python  & Data analysis research, CS 425, CS 398                \\
+		Java    & Software dev -- 
+		\href{https://github.com/dataspread/dataspread-web}{DataSpread} \\
+		FORTRAN & Scientific computing, climate modeling                \\
+		MATLAB  & Data analysis research, numeric software develop      \\
+		Clojure & CS 225 honor section, text adventure game             \\
+		Haskell & CS 421 MP/activities                                  \\
+		% SQL     & CS 411 Teaching Assistant                             \\
+		\LaTeX  & Thesis, homework, reports, \emph{this CV}
 	\end{tabular}
 	
-	\section{TEACHING EXPERIENCE}
-	 {\bf Teaching Assistant}, University of Illinois \righttime{Fall 2016 -- Spring 2017}\\
-	\emph{ATMS 301} TA with Prof. \!Sonia Lasher-Trapp. \righttime{Fall 2016}\\
-	Activities included grading homework, writing quiz questions and giving mini lectures explaining homework problems. \\
-	\emph{ATMS 201} TA with Prof. Eric Snodgrass. \righttime{Spring 2017} \\
-	Main task was grading homework \& exams.
-	
-	\section{SOFTWARE PROJECT EXPERIENCE}
-	\href{https://github.com/dataspread/dataspread-web}{DataSpread}, University of Illinois \righttime{May 2018 -- Present} \\
-	Working on the navigation browsing component, integrating front-end design and back-end database algorithm support. Mainly develop in java.\\
-	\href{https://github.com/joefinlon/UIOPS}{UIOPS}, University of Illinois \righttime{Fall 2014 -- Fall 2016} \\
-	Research oriented developing on numerical computation and image processing in MATLAB. Also involves data analysis and visualization using python (Scipy/Pandas/Matplotlib).
+	\section{WORKING EXPERIENCE}
+	 {\bf Summer Intern}, University of Illinois \righttime{Summer 2018}\\
+	\href{https://github.com/dataspread/dataspread-web}{\faGithub} \href{http://dataspread.github.io/}{DataSpread}
+	Working on the navigation browsing component, integrating front-end design and back-end database algorithm support. Mainly develop in java/javascript.\\
+	{\bf Teaching Assistant}, University of Illinois \righttime{Fall 2016 -- Present}\\
+	\emph{CS 411, ATMS 301, ATMS 201} Duties include grading homework, writing quiz questions and giving mini lectures explaining homework problems. \\
+	{\bf Research Assistant}, University of Illinois \righttime{Fall 2014 -- Spring 2016}\\
+	\href{https://github.com/joefinlon/UIOPS}{UIOPS} Research oriented developing on numerical computation and image processing in MATLAB, as well as data analysis and visualization using Python (Scipy/Pandas/Matplotlib).%
+	\bibliographystyle{plain}
+	\nobibliography{ref}
+	\vspace{-0.15in}
+	\href{https://agu.confex.com/agu/fm16/meetingapp.cgi/Paper/163505}{\bf Conference}: \bibentry{Zhu2016}
 	
 \end{resume}
 \end{document}
