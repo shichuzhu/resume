@@ -25,7 +25,7 @@
 
 \usepackage{import}
 
-\name{Shichu}{Zhu}
+\name{Shichu (Stuart)}{Zhu}
 % \title{Curriculum Vitae}% optional, remove / comment the line if not wanted
 % \address{my address, line 1, line 2, line 3, postcode}{}{}
 \phone[mobile]{+1 (217) 607-6968}% optional, remove / comment the line if not wanted
@@ -38,11 +38,11 @@
 \begin{document}
 \makecvtitle
 
-% \small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
-\vspace{-50pt}
+\vspace{-40pt}
 \section{Education}
+\vspace{-5pt}
 \begin{itemize}
-	\item {\cventry{August 2018--Present}
+	\item {\cventry{August 2018--Expected December 2019}
 	      {Computer Science}
 	      {University of Illinois at Urbana-Champaign}
 	      {Urbana, IL, US}
@@ -67,10 +67,8 @@
 	      }
 \end{itemize}
 
-\section{Courses}
-test
+\vspace{-5pt}
 \section{Experience}
-\vspace{6pt}
 \begin{itemize}
 	% \item{\cventry{July 2013--August 2013}
 	%       {Position}
@@ -86,37 +84,41 @@ test
 	      %   {}
 	      {Urbana, IL, USA}
 	      {Dept of Computer Science}
-	      {\emph{CS 411 Database Systems,} Design homework questions (SQL query, ER diagrams), present tutorial lecture on web programming upon DBMS and hold office hours.}
+	      {\emph{CS 411 Database Systems.} Design homework questions (\underline{SQL} query, ER diagrams), present tutorial lecture on web programming with DBMS.}
 	      }
 	      
 	\item{\cventry{Summer 2018}
-	      {Summer Intern}
+	      %   {Summer Intern}
+	      {Software developer}
 	      %   {University of Illinois}
 	      {\vspace{-10pt}}
 	      %   {Urbana, IL, USA}
 	      {}
-	      {DataSpread Group: \href{https://dataspread.github.io}{\faExternalLink dataspread.github.io}}
-	      {\href{https://github.com/dataspread/dataspread-web}{\faGithub} Designed and developed the navigation browsing component, integrating front-end design and back-end database algorithm support. Achievements included augmenting ZKSpreadSheet's formula execution engine and using complex data structures such as B-Tree. Mainly developed in java/javascript with the Spring framework.}
+	      {DataSpread Group: \href{https://github.com/dataspread/dataspread-web}{\faGithub} \href{https://dataspread.github.io}{\underline{dataspread.github.io}}}
+	      {
+		      A full-stack developing experience with more emphasis on the back-end. Mainly developed in \underline{java/javascript} with the Spring framework. Designed and developed the navigation browsing component, integrating front-end design and back-end database algorithm support. Achievements included augmenting ZK--SpreadSheet's formula execution engine and using complex data structures such as B-Tree.}
 	      }
 	      
-	\item{\cventry{2016--2017}
-	      {Teaching Assistant}
-	      %   {University of Illinois}
-	      {\vspace{-10pt}}
-	      %   {Urbana, IL, USA}
-	      {}
-	      {Dept of Atmospheric Science}
-	      {\emph{ATMS 301 Thermodynamics, ATMS 201 General Physical Meteorology,} Duties included grading homework, writing quiz questions and giving mini lectures explaining homework problems.}
-	      }
+	      % \item{\cventry{2016--2017}
+	      %   {Teaching Assistant}
+	      %   %   {University of Illinois}
+	      %   {\vspace{-10pt}}
+	      %   %   {Urbana, IL, USA}
+	      %   {}
+	      %   {Dept of Atmospheric Science}
+	      %   {\emph{ATMS 301 Thermodynamics, ATMS 201 General Physical Meteorology,} Duties included grading homework, writing quiz questions and giving mini lectures explaining homework problems.}
+	      %   }
 	      
-	\item{\cventry{2014--2016}
+	\item{\cventry{2014--2017}
 	      {Research Assistant}
 	      %   {University of Illinois}
 	      {\vspace{-10pt}}
 	      %   {Urbana, IL, USA}
 	      {}
 	      {Dept of Atmospheric Science}
-	      {\href{https://github.com/joefinlon/UIOPS}{\emph{UIOPS}} Improved the theoretical mechanism of the ice clouds formation by analyzing airborne observation dataset. Technically involved developing of numerical computation and image processing in MATLAB, as well as data analysis and visualization using Python (Scipy/Pandas/Matplotlib).}
+	      % TODO: Put the git repo link for some research code here. (e.g. Jupyter notebooks)
+	      {
+		      NSF--funded research project. Programmingly involved developing numerical and image processing algorithms in \underline{MATLAB}, data analysis and visualization in \underline{Python} (Scipy/Pandas/Matplotlib).}
 	      }
 	      
 	\item{\cventry{Summer 2013}
@@ -125,7 +127,7 @@ test
 	      %   {}
 	      {Pasadena, CA, USA}
 	      {Dept of Planetary Science}
-	      {Numerical simulation of the weather layer of Jupiter's atmosphere using GFDL's shallow water model.}
+	      {Numerical simulation of the weather layer of Jupiter's atmosphere using GFDL's shallow water model. Original model and tuning are coded in \underline{FORTRAN}.}
 	      }
 	      
 	\item{\cventry{2013--2014}
@@ -134,12 +136,14 @@ test
 	      %   {}
 	      {Beijing, China}
 	      {Dept of Atmospheric and Oceanic Sciences}
-	      {A survey and comparison of existing numerical advection schemes in solving 1-D advection equation.}
+	      {A survey and comparison of existing numerical advection schemes in solving 1-D advection equation. Implemented in \underline{FORTRAN}.}
 	      }
 	      
 \end{itemize}
 
+\vspace{-5pt}
 \section{Projects}
+\vspace{-5pt}
 \begin{itemize}
 	\item{\cventry{Fall 2017}
 	      {Course project}
@@ -147,11 +151,11 @@ test
 	      {\vspace{-10pt}}
 	      %   {Urbana, IL, USA}
 	      {}
-	      {CS 425 Distributed System}
+	      {Distributed System}
 	      {
 		      %   \emph{Source on demand}%
-		      \href{https://gitlab-beta.engr.illinois.edu/szhu28/ShichuCS425MP}{\faGitlab gitlab-beta.engr.illinois.edu/szhu28/ShichuCS425MP}
-		      Implemented a gossip-style failure detector for a distributed system connected by arbitrary network topology. Programming techniques included building a utility RPC module with socket and decorator in Python.}
+		      \href{https://gitlab-beta.engr.illinois.edu/szhu28/ShichuCS425MP}{\faGitlab \url{gitlab-beta.engr.illinois.edu/szhu28/ShichuCS425MP}}
+		      Implemented a gossip-style failure detector for a distributed system connected by arbitrary network topology. Programming techniques included building a utility RPC module with socket and decorator in \underline{Python}.}
 	      }
 	      
 	\item{\cventry{Fall 2017}
@@ -160,20 +164,59 @@ test
 	      {\vspace{-10pt}}
 	      %   {Urbana, IL, USA}
 	      {}
-	      {CS 225 Data Structures Honor Section}
+	      {Data Structures Honor Section}
 	      {
 		      %   \emph{Source on demand}%
-		      \href{https://github.com/shichuzhu/text_adventure_game}{\faGithub github.com/shichuzhu/text\_adventure\_game}
-		      A simple terminal text adventure game built under functional programming paradigm in Clojure.}
-		  }
+		      \href{https://github.com/shichuzhu/text_adventure_game}{\faGithub \url{github.com/shichuzhu/text\_adventure\_game}}
+		      A simple terminal text adventure game built under functional programming paradigm in \underline{Clojure}.}
+	      }
 	      
 \end{itemize}
 
-\section{Programming Languages}
-\vspace{6pt}
+\vspace{-5pt}
+\section{Courses}
+\vspace{-5pt}
+\begin{itemize}\small
+	\item \textbf{Taken (grade):}
+	      Algorithms and Data Structures (B),
+	      Applied Numerical Methods (A\texttt{+}),
+	      Calculus (A),
+	      Introduction to Computation (A\texttt{+}),
+	      Linear Algebra (A),
+	      Probability and Statistics (B),
+	\item \textbf{Audited (Programming language used):}
+	      Algorithms,
+	      Applied Cloud Computing (Python),
+	      Communication Networks (C\texttt{++}),
+	      Database Systems,
+	      Distributed Systems (Python, Go),
+	      System Programming (C).
+\end{itemize}
+
+\vspace{-5pt}
+\section{Programming Skills}
+\vspace{-5pt}
 \begin{itemize}
-	\item \textbf{Proficient in:} C\texttt{++}, Python, Java.
-	\item \textbf{Familiar with:} Golang, FORTRAN, MATLAB, SQL, Haskell, Clojure, javascript, \LaTeX.
+	\item \textbf{Proficient in:}
+	      C\texttt{++}, 
+	      Java,
+	      Python.
+	\item \textbf{Familiar with:}
+	      C,
+	      Clojure,
+	      FORTRAN,
+	      Go,
+	      Haskell,
+	      MATLAB,
+	      SQL,
+	      \LaTeX,
+	      javascript.
+	\item \textbf{Frameworks:}
+	      React,
+	      gRPC,
+	      Django,
+	      Node.js, 
+	      Spring.
 \end{itemize}
 
 % Publications from a BibTeX file without multibib
